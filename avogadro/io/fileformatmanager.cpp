@@ -20,6 +20,7 @@
 #include "turbomoleformat.h"
 #include "vaspformat.h"
 #include "xyzformat.h"
+#include "gltfformat.h"
 
 #ifdef AVO_USE_MMTF
 #include "mmtfformat.h"
@@ -29,6 +30,7 @@
 #include <memory>
 
 using std::unique_ptr;
+FileFormatManager::registerFormat(new GltfFormat);
 
 namespace Avogadro::Io {
 
